@@ -146,12 +146,12 @@ header{
     color: rgb(141, 122, 96);
 }
 
-.sidemenu a:visited{
+/* .sidemenu a:visited{
     color: rgb(141, 122, 96);
-}
+} */
 
 .sidemenu a:active{
-    color: rgb(141, 122, 96);
+    color: white;
 }
 
 .sidemenu ul li{
@@ -380,9 +380,9 @@ p{
     color: rgb(141, 122, 96);
 }
 
-.footer a:visited{
+/* .footer a:visited{
     color: rgb(141, 122, 96);
-}
+} */
 
 .footer a:active{
     color: rgb(141, 122, 96);
