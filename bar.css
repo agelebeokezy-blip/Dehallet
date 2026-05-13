@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: clip;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+    background: rgb(32, 32, 32);
+    color: white;
+}
+
+
+/* this is the header styling */
+
+header{
+    width: 100vw;
+    background: black;
+}
+
+.navbar {
+    position: fixed;
+    background: rgba(29, 28, 28, 0.99);
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 3;
+    font-family: "Bricolage Grotesque", sans-serif;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgb(141, 122, 96);
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    transition: 0.25s;
+    padding: 10px 10px;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    align-items: left;
+    justify-items:left;
+    left: 5px;
+}
+
+.navbar .navli ul {
+    display: flex;
+}
+
+.navbar .navli ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navbar .navli ul li .class1 {
+    position: absolute;
+    border: 1px solid rgb(141, 122, 96);
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    right: 3%;
+    top:20px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.navli a:hover {
+    background: rgb(141, 122, 96);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.fa-bars {
+    font-size: 2em;
+    color: white;
+}
+
+/* Body style */
+
+.clubdrink{
+    margin-top: 5em;
+    border: 2px solid rgb(226, 206, 180);
+    border-radius: 10px;
+    margin-left: 2em;
+    margin-right: 2em;
+    /* text-align: center; */
+    padding-top: 2em;
+    height: fit-content;
+    justify-items: center;
+    width: 50em;
+}
+
+.clubdrink .gridd{
+    display: grid;
+    grid-template-columns: repeat(2, 15vw);
+    margin-top: 2em;
+    gap: 5em;
+}
+
+.clubdrink h1{
+    color: rgb(226, 206, 180);
+}
+
+.clubdrink h2{
+    color: rgb(226, 206, 180);
+}
+
+.clubdrink h3{
+    color: rgb(226, 206, 180);
+}
+
+.clubdrink .leftmenu{
+    justify-content: center;
+}
+
+.clubdrink .rightmenu{
+    justify-content: center;
+    text-align: left;
+
+}
+
+.clubdrink hr{
+    width: 20em;
+    border-bottom: 1em;
+    border: 1px solid rgb(226, 206, 180);
+    margin-bottom: 1em;
+}
+
+.clubdrink ul{
+    margin-bottom: 4em;
+}
+
+.clubdrink ul li {
+    margin-bottom: 0.5em;
+}
+
+.drinkmenu{
+    text-align: center;
+    border: 2px solid rgb(226, 206, 180);
+    justify-content: center;
+    width: 60em;
+    margin-left: 57em;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: -97.3vh;
+    margin-bottom: 20em;
+}
+
+.drinkmenu .drinkmenugrid{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    gap: 2em;
+}
+
+.drinkmenu h1{
+    margin-top: 1em;
+    color: rgb(226, 206, 180);
+}
+
+.drinkmenu h2{
+    color: rgb(226, 206, 180);
+    margin-bottom: 1.5em;
+}
+
+.drinkmenu h3{
+    color: rgb(226, 206, 180);
+}
+
+.drinkmenugrid .grid1{
+    margin-left: 1em;
+    text-align: left;
+}
+
+.drinkmenugrid ul{
+    margin-bottom: 2em;
+}
+
+.drinkmenugrid ul li{
+    margin-bottom: 0.5em;
+}
+
+.drinkmenugrid hr{
+    width: 20em;
+    border-bottom: 1em;
+    border: 1px solid rgb(226, 206, 180);
+    margin-bottom: 1em;
+}
+
+.drinkmenugrid .grid2{
+    text-align: left;
+}
+
+.drinkmenugrid .grid3{
+    text-align: left;
+}
+
+
+
+/* style for footer */
+
+.footer-section{
+    text-align: center;
+    background: rgba(29, 28, 28, 0.99);
+    color: white;
+    padding-bottom: 1em;
+    font-family: "Bricolage Grotesque", sans-serif;
+    border-top: 1px solid rgb(141, 122, 96);
+    padding-top: 3em;
+}
+
+.footer .slink{
+    padding-left: 2rem;
+}
+
+ .span{
+    color: rgb(141, 122, 96);
+    font-size: 0.9em;
+    margin-top: 3em;
+}
+
+.ftimg {
+    width: 10vw;
+    vertical-align: middle;
+    height: 15vh;
+}
+
+.footer{
+    bottom: 0px;
+    background: rgba(29, 28, 28, 0.99);
+    color: white;
+    display: grid;
+    gap: 10px;
+    width: 100vw;
+    grid-template-columns:repeat(4, auto);
+    margin-left: 3.5em;
+}
+
+.footer .footer-item {
+    padding: 7px;
+    text-align: left;
+
+}
+
+.footer .h3 {
+    text-align: left;
+    color: rgb(141, 122, 96);
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color: rgb(141, 122, 96);
+}
+
+.footer i {
+    font-size: 25px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    font-size: 29px; 
+    color: rgb(141, 122, 96);  
+}
+
+
+.fa-tiktok:hover {
+    font-size: 29px; 
+    color: rgb(141, 122, 96);
+}
+
+.fa-tiktok {
+    transition: 0.25s;  
+}
+
+.fa-instagram {
+    transition: 0.25s;  
+}
+
+.fa-whatsapp{
+    transition: 0.25s;
+}
+
+.fa-whatsapp:hover {
+    font-size: 29px;
+    color: rgb(141, 122, 96);
+}
+
+.footer-section .hr{
+    width: 30vw;
+    justify-self: center;
+    margin-top: 2em;
+    border: 1px solid rgb(141, 122, 96);
+    border-bottom: none;
+    margin-bottom: -1em;
+}

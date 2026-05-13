@@ -1,0 +1,465 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: clip;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+    background: rgba(19, 18, 18, 0.99);
+    color: white;
+}
+/* this is the header styling */
+
+header{
+    width: 100vw;
+    background: black;
+}
+
+.navbar {
+    position: fixed;
+    background: rgba(29, 28, 28, 0.99);
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 3;
+    font-family: "Bricolage Grotesque", sans-serif;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgb(141, 122, 96);
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    transition: 0.25s;
+    padding: 10px 10px;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    align-items: left;
+    justify-items:left;
+    left: 5px;
+}
+
+.navbar .navli ul {
+    display: flex;
+}
+
+.navbar .navli ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navbar .navli ul li .class1 {
+    position: absolute;
+    border: 1px solid rgb(141, 122, 96);
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    right: 3%;
+    top:20px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.navli a:hover {
+    background: rgb(141, 122, 96);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.fa-bars {
+    font-size: 2em;
+    color: white;
+}
+
+.Home-photo{
+    display: flex;
+    animation-name: bground;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+}
+
+.Home-photo img{
+    opacity: 60%;
+    height: 950px;
+}
+
+.Home-photo h1{
+    position: absolute;
+    align-self: center;
+    font-size: 4em;
+    margin-left: 7em;
+}
+
+/* sidemenu style */
+
+.sidemenu{
+    background: rgba(29, 28, 28, 0.99);
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    text-align: left;
+    height: fit-content;
+    text-decoration:none;
+    transition: 0.5s;
+    z-index: 1000;
+    font-size: 0.8em;
+    right: -101vw;
+    border: 1px solid rgb(141, 122, 96);
+    border-radius: 10px;
+}
+
+.sidemenu.active{
+    right: -40vw;
+}
+
+.sidemenu a:link{
+    margin-left: 1em;
+    color: rgb(141, 122, 96);
+}
+
+.sidemenu a:visited{
+    color: rgb(141, 122, 96);
+}
+
+.sidemenu a:active{
+    color: rgb(141, 122, 96);
+}
+
+.sidemenu ul li{
+    margin-bottom: 2em;
+}
+
+.sidemenu ul li a{
+    color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.5em;
+}
+
+.sidemenu ul{
+    margin-top: 8em;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+    /* When menu is active */
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* cards section */
+
+
+.second-section-div2{
+    display: grid;
+    grid-template-columns: repeat(2, 15vw);
+    gap: 3em;
+    justify-content: center;
+    margin-top: 10em;
+    background: rgb(54, 54, 54);
+    width: 55em;
+    margin-left: 12em;
+    height: 25em;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    align-items: center;
+    border: 2px solid rgb(54, 54, 54);
+    margin-bottom: 10em;
+}
+
+.second-section-div2 img{
+    border-radius: 20px;
+    transition: 0.25s;
+    border: 2px solid rgb(226, 206, 180);
+    margin-left: -0.1em;
+}
+
+.second-section-div2 img:hover{
+    width: 98%;
+}
+
+.second-section-div2 .card-link{
+    transition: 0.25s;
+    color: rgb(226, 206, 180)
+}
+
+.second-section-div2 .card-link:hover{
+    border-bottom: 2px solid rgb(226, 206, 180);
+    font-size: 1.2em;
+}
+
+/* style for footer */
+
+.footer-section{
+    text-align: center;
+    background: rgba(29, 28, 28, 0.99);
+    color: white;
+    padding-bottom: 1em;
+    font-family: "Bricolage Grotesque", sans-serif;
+    border-top: 1px solid rgb(141, 122, 96);
+    padding-top: 3em;
+}
+
+.footer .slink{
+    padding-left: 2rem;
+}
+
+ .span{
+    color: rgb(141, 122, 96);
+    font-size: 0.9em;
+    margin-top: 3em;
+}
+
+.ftimg {
+    width: 10vw;
+    vertical-align: middle;
+    height: 15vh;
+}
+
+.footer{
+    bottom: 0px;
+    background: rgba(29, 28, 28, 0.99);
+    color: white;
+    display: grid;
+    gap: 10px;
+    width: 100vw;
+    grid-template-columns:repeat(4, auto);
+    margin-left: 3.5em;
+}
+
+.footer .footer-item {
+    padding: 7px;
+    text-align: left;
+
+}
+
+.footer .h3 {
+    text-align: left;
+    color: rgb(141, 122, 96);
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color: rgb(141, 122, 96);
+}
+
+.footer a:visited{
+    color: rgb(141, 122, 96);
+}
+
+.footer a:active{
+    color: rgb(141, 122, 96);
+}
+
+.footer i {
+    font-size: 25px;
+    color: white;
+}
+
+.fa-instagram:hover { 
+    color: rgb(141, 122, 96);  
+}
+
+
+.fa-tiktok:hover { 
+    color: rgb(141, 122, 96);
+}
+
+.fa-tiktok {
+    transition: 0.25s;  
+}
+
+.fa-instagram {
+    transition: 0.25s;  
+}
+
+.fa-whatsapp{
+    transition: 0.25s;
+}
+
+.fa-whatsapp:hover {
+    color: rgb(141, 122, 96);
+}
+
+.footer-section .hr{
+    width: 30vw;
+    justify-self: center;
+    margin-top: 2em;
+    border: 1px solid rgb(141, 122, 96);
+    border-bottom: none;
+    margin-bottom: -1em;
+}
+
+/* Responsiveness */
+
+@media (max-width:599px) {
+
+    *{
+        text-decoration: none;
+        list-style: none;
+        overflow-x: clip;
+        /* outline: 1px solid red !important; */
+        box-sizing: border-box;
+        max-width: 100%;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     ::-webkit-scrollbar{
+        display: none;
+    }
+
+   .ftimg {
+        width: 30vw;
+        vertical-align: middle;
+        height: 15vh;
+        
+    }
+
+    .footer{
+        bottom: 0px;
+        background: rgba(29, 28, 28, 0.99);
+        color: white;
+        display: grid;
+        gap: 2em;
+        width: 100vw;
+        grid-template-columns:repeat(1, auto);
+        margin-left: 0em;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .footer .footer-item {
+        padding: 7px;
+        text-align: center;
+
+    }
+
+    .footer .h3 {
+        text-align: center;
+        color: rgb(141, 122, 96);
+        margin-left: 0;
+
+    }
+
+    .footer a{
+        color: white;
+    }
+
+    .footer a:hover{
+        color: rgb(141, 122, 96);
+    }
+
+    .footer i {
+        font-size: 100%;
+        color: white;
+        line-height: 1.5;
+    }
+
+    .footer .slink{
+        padding-left: 0;
+    }
+
+    .footer-section .hr{
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     .span{
+         width: 90vw;
+        font-size: 0.8em;
+        justify-self: center;
+    }
+
+    .navbar .navli {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: right;
+        height: 10.5vh;
+        z-index: 1001;
+    }
+
+    .logo{
+        width: 39vw;
+        align-self: center;
+        margin-left: -1em;
+    }
+
+    .fa-bars {
+        font-size: 1.5em;
+        color: white;
+        display: block;
+        font-weight: 600;
+        position: fixed;
+        right: 5%;
+        align-self: center;
+        justify-self: center;
+        margin-top: -0.5em;
+    }
+
+    .Home-photo img{
+        opacity: 40%;
+        height: 450px;
+    }
+
+    .Home-photo h1{
+        position: absolute;
+        font-size: 150%;
+        margin-left: 7vw;
+        margin-top: 2em;
+        font-weight: 200;
+    }
+
+    .second-section-div2{
+        grid-template-columns: repeat(1, 50vw);
+        gap: 1.5em;
+        margin-top: 4em;
+        background: rgb(54, 54, 54);
+        width: 90vw;
+        justify-self: center;
+        margin-left: 0em;
+        margin-right: 0em;
+        height: fit-content;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1.3em;
+    }
+
+    .footer-section .hr{
+        width: 50vw;
+    }
+}
