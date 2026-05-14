@@ -41,6 +41,13 @@ header{
     padding: 10px 10px;
 }
 
+.navli a.active{
+    background: rgb(141, 122, 96);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
 .logo {
     width: 10vw;
     position: absolute;
@@ -200,11 +207,14 @@ header{
     background: none;
     font-size: larger;
     font-family: "Bricolage Grotesque", sans-serif;
+    width: 50vw;
+    justify-self: center;
 }
 
 .section1 p{
     line-height: 1.9;
     background: none;
+    font-size: 120%;
 }
 
 .grid-container{
@@ -213,12 +223,11 @@ header{
     width: 100vw;
     height: 100%;
     display: grid;
-    gap: -1px;
     grid-template-columns:repeat(2, 50vw);
     margin-bottom: 10em;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: larger;
-    font-style: oblique;
+    text-align: left;
+    font-weight: lighter;
 }
 
 .grid-container p{
@@ -227,14 +236,14 @@ header{
 }
 
 .grid-container .grid-item1 {
-    align-content: center;
+    /* align-content: center; */
    background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-left: 8em;
 }
 
 .grid-container .grid-item2 {
-    align-content: center;
+    /* align-content: center; */
     background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-right: 8em;  
@@ -243,7 +252,7 @@ header{
 }
 
 .grid-container .grid-item3 {
-    align-content: center;
+    /* align-content: center; */
     background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-left: 8em;  
@@ -252,21 +261,21 @@ header{
 }
 
 .grid-container .grid-item4 {
-    align-content: center;
+    /* align-content: center; */
     background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-right: 8em; 
 }
 
 .grid-container .grid-item5 {
-    align-content: center;
+    /* align-content: center; */
     background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-left: 8em; 
 }
 
 .grid-container .grid-item6 {
-    align-content: center;
+    /* align-content: center; */
     background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-right: 8em;  
@@ -275,7 +284,7 @@ header{
 }
 
 .grid-container .grid-item7 {
-    align-content: center;
+    /* align-content: center; */
     background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-left: 8em;  
@@ -284,7 +293,7 @@ header{
 }
 
 .grid-container .grid-item8 {
-    align-content: center;
+    /* align-content: center; */
     background: rgba(26, 24, 24, 0.99);
     color: white;
     margin-right: 8em;   
@@ -310,15 +319,19 @@ header{
 }
 
 h1{
-    text-align: center;
-    margin-bottom: 2em;
+    text-align: left;
+    font-size: 200%;
+    font-weight: lighter;
+    margin-bottom: 5%;
+    margin-top: 3%;
     font-family: "Bricolage Grotesque", sans-serif;
 }
 
 p{
-    font-weight: 400;
-    line-height: 22px;
+    font-weight: lighter;
+    line-height: 1.8;
     padding-bottom: 1em;
+    font-size: 100%;
 }
 
 
@@ -428,6 +441,7 @@ p{
     border: 1px solid rgb(141, 122, 96);
     border-bottom: none;
     margin-bottom: -1em;
+    display: none;
 }
 
 /* Responsiveness */

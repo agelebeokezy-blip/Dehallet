@@ -43,6 +43,13 @@ header{
     padding: 10px 10px;
 }
 
+.navli a.active{
+    background: rgb(141, 122, 96);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
 .logo {
     width: 10vw;
     position: absolute;
@@ -172,7 +179,7 @@ header{
     width: 50vw;
     background: rgba(19, 18, 18, 0.99);
     border-radius: 30px;
-    border: 2px solid white;
+    border: 1px solid gray;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -187,7 +194,7 @@ header{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid gray;
     text-align: left;
 }
 
@@ -215,6 +222,11 @@ header{
     text-align: left;
 }
 
+.headd{
+    color: white;
+    font-weight: lighter;
+}
+
 .concent {
     margin: 15px 43px;
     text-align: left;
@@ -223,10 +235,11 @@ header{
 
 .concent input{
     background: transparent;
-    accent-color: green;
+    accent-color:rgb(141, 122, 96) ;
     appearance: none;
-    width: 30px;
-    height: 22px;
+   aspect-ratio: 1/1;
+   width: 3%;
+   height: 3%;
     border: 1px solid white;
     border-radius: 5px;
     margin-right: 10px;
@@ -244,8 +257,8 @@ input[type="checkbox"]:checked {
 button {
     width: 90%;
     height: 70px;
-    background: red;
-    color: white;
+    background: rgb(141, 122, 96);
+    color: black;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -263,13 +276,17 @@ button:hover {
     text-align: left;
     padding-left: 30px;
     padding-right: 30px;
+    font-weight: lighter;
+}
+
+iframe{
+    border-radius: 10px;
 }
 
 .maps{
    margin-left: 10em;
     text-align: left;
     margin-top: -25em;
-    border: 2px solid white;
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }
@@ -381,6 +398,7 @@ button:hover {
     border: 1px solid rgb(141, 122, 96);
     border-bottom: none;
     margin-bottom: -1em;
+    display: none;
 }
 
 /* Responsiveness */

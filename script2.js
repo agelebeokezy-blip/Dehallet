@@ -6,11 +6,11 @@ const nextBtn = document.querySelector('.fa-chevron-right');
 const container = document.querySelector('.event-container')
 
 prevBtn.addEventListener('click', () => {
-  container.scrollBy({ left: -340, behavior: 'smooth' });
+  container.scrollBy({ left: -329, behavior: 'smooth' });
 });
 
 nextBtn.addEventListener('click', () => {
-  container.scrollBy({ left: 340, behavior: 'smooth' });
+  container.scrollBy({ left: 329, behavior: 'smooth' });
 });
 
 // event container buttons display

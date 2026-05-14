@@ -35,3 +35,11 @@ document.addEventListener("click", () =>{
     });
 
 })
+
+
+// Adds the 'active' class to a link if its href matches the current URL
+document.querySelectorAll('nav a').forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add('active');
+  }
+});

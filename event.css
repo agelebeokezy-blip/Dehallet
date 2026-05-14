@@ -36,6 +36,13 @@ body {
     padding: 10px 10px;
 }
 
+.navli a.active{
+    background: rgb(141, 122, 96);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
 .logo {
     width: 10vw;
     position: absolute;
@@ -155,6 +162,8 @@ h1{
     text-align: center;
     margin-top: 6em;
     text-transform: uppercase;
+    font-size: 200%;
+    font-weight: lighter;
     font-family: "Bricolage Grotesque", sans-serif;
 }
 
@@ -183,7 +192,6 @@ h1{
 }
 
 .grid-item h3{
-    color: rgb(226, 206, 180);
     font-family: "Bricolage Grotesque", sans-serif;
     margin-left: 0em;
     margin-top: -1em;
@@ -212,9 +220,10 @@ h5{
     padding: 10px 10px;
     align-items: center;
     transition: 0.25s;
-    background: red;
-    color: white;
+    background: rgb(141, 122, 96);
+    color: black;
     justify-self: center;
+    border-radius: 5px;
 }
 
 .Grid-container .link a:hover{
@@ -349,6 +358,7 @@ h5{
     border: 1px solid rgb(141, 122, 96);
     border-bottom: none;
     margin-bottom: -1em;
+    display: none;
 }
 
 

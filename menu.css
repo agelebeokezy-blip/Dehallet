@@ -41,6 +41,13 @@ header{
     padding: 10px 10px;
 }
 
+.navli a.active{
+    background: rgb(141, 122, 96);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
 .logo {
     width: 10vw;
     position: absolute;
