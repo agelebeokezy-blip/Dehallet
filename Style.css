@@ -182,8 +182,8 @@ body {
     /* margin-top: 5%; */
     position: absolute;
     bottom: 10%;
-    /* left: 50%;
-    transform: translate(-50%, -50%); */
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 1px solid rgb(141, 122, 96);
     border-radius: 5px;
     padding: 5px;
