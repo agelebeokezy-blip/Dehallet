@@ -44,9 +44,11 @@ body {
 }
 
 .logo {
-    width: 10vw;
+    width: 9vw;
+    align-self: center;
+    top: 13%;
+    /* height: 5vh; */
     position: absolute;
-    align-items: left;
     justify-items:left;
     left: 5px;
 }
