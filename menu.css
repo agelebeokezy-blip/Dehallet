@@ -80,6 +80,7 @@ header{
     top:20px;
     text-transform: uppercase;
     transition: 0.25s;
+    width: fit-content;
 }
 
 .navli a:hover {

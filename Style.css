@@ -37,7 +37,7 @@ body {
     transition: 0.25s;
     padding: 10px 10px;
     align-self: center;
-    width: 11.5vw;
+    width: 11.2vw;
 }
 
 .navli a.active{
@@ -78,6 +78,7 @@ body {
     text-transform: uppercase;
     transition: 0.25s;
     font-family: "Bricolage Grotesque", sans-serif;
+    width: fit-content;
 }
 
 .navli a:hover {
@@ -830,11 +831,11 @@ video::-webkit-media-controls-panel {
     .second-section-div{
         grid-template-columns: repeat(1, 95vw);
         text-align: left;
-        gap: 1em;
+        gap: 1%;
         font-size: small;
         margin-left: 0;
         justify-content: center;
-        height: fit-content;
+        height:200vh;
     }
 
     .second-section-div .box{
