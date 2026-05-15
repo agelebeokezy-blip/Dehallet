@@ -831,23 +831,25 @@ video::-webkit-media-controls-panel {
     .second-section-div{
         grid-template-columns: repeat(1, 95vw);
         text-align: left;
-        gap: 1%;
+        gap: 0%;
         font-size: small;
         margin-left: 0;
         justify-content: center;
-        height:200vh;
+        height:210vh;
+        margin-left: 0;
     }
 
     .second-section-div .box{
-        height: 35vh;
+        height: 40vh;
         width: 100vw;
         box-sizing: border-box;
         font-size: 100%;
         display: flex;
         flex-direction: column;
         background: rgba(19, 18, 18, 0.99);
-        padding: 5%;
+        padding: 1%;
         border-radius: 10px;
+        margin-bottom: 0;
     }
 
     .second-section-div img{
