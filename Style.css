@@ -879,7 +879,7 @@ video::-webkit-media-controls-panel {
 
     .second-section-div h1{
         text-align: left;
-        margin-top: -2em;
+        margin-top: 0em;
         font-size: 200%;
         margin-left: 0;
     }
