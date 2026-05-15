@@ -43,6 +43,8 @@ header{
     color: white;
     transition: 0.25s;
     padding: 10px 10px;
+    align-self: center;
+    width: 11.5vw;
 }
 
 .navli a.active{
@@ -53,9 +55,9 @@ header{
 }
 
 .logo {
-    width: 9vw;
+    width: 7vw;
     align-self: center;
-    top: 13%;
+    top: 15%;
     /* height: 5vh; */
     position: absolute;
     justify-items:left;
@@ -351,6 +353,7 @@ button:hover {
 
 .footer .slink{
     padding-left: 2rem;
+    margin-top: 1rem;
 }
 
  .span{
@@ -360,9 +363,9 @@ button:hover {
 }
 
 .ftimg {
-    width: 10vw;
+    width: 7vw;
     vertical-align: middle;
-    height: 15vh;
+    background: none;
 }
 
 .footer{
@@ -468,10 +471,8 @@ button:hover {
     }
 
    .ftimg {
-        width: 30vw;
+        width: 25vw;
         vertical-align: middle;
-        height: 15vh;
-        
     }
 
     .footer{
@@ -480,7 +481,7 @@ button:hover {
         color: white;
         display: grid;
         gap: 2em;
-        width: 100vw;
+        width: 99vw;
         grid-template-columns:repeat(1, auto);
         margin-left: 0em;
         text-align: center;
@@ -534,16 +535,20 @@ button:hover {
         display: none;
     }
 
-    .navbar {
+   .navbar {
         justify-content: right;
-        height: 10.5vh;
+        height: 6.5vh;
         z-index: 1001;
     }
 
+    .navbar a{
+        width: 50vw;
+    }
+
     .logo{
-        width: 39vw;
+        width: 25vw;
         align-self: center;
-        margin-left: -1em;
+        margin-left: 0em;
     }
 
    .fa-bars {
@@ -568,16 +573,27 @@ button:hover {
     }
 
     button {
-        width: 80%;
-        font-size: 130%;
+        width: 80vw;
+        font-size: 110%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 
     .headd{
         margin-top: -8em;
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
         color: white;
     }
 
+    .headd1{
+        width: 100vw;
+        margin-left: 0;
+        padding: 20px;
+        font-weight: lighter;
+    }
 
     .reservation{
         display: grid;

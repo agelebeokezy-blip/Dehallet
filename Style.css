@@ -25,7 +25,7 @@ body {
     justify-content: center;
     width: 100vw;
     box-sizing: border-box;
-    align-items: center;
+    /* align-items: center; */
     z-index: 3;
     font-family: "Bricolage Grotesque", sans-serif;
     backdrop-filter: blur(5px);
@@ -37,6 +37,7 @@ body {
     transition: 0.25s;
     padding: 10px 10px;
     align-self: center;
+    width: 11.5vw;
 }
 
 .navli a.active{
@@ -47,9 +48,9 @@ body {
 }
 
 .logo {
-    width: 9vw;
+    width: 7vw;
     align-self: center;
-    top: 13%;
+    top: 15%;
     /* height: 5vh; */
     position: absolute;
     justify-items:left;
@@ -688,7 +689,7 @@ video::-webkit-media-controls-panel {
 
 .footer .slink{
     padding-left: 2rem;
-    margin-top: -1rem;
+    margin-top: 1rem;
 }
 
  .span{
@@ -698,9 +699,9 @@ video::-webkit-media-controls-panel {
 }
 
 .ftimg {
-    width: 10vw;
+    width: 7vw;
     vertical-align: middle;
-    height: 15vh;
+    background: none;
 }
 
 .footer{
@@ -807,14 +808,18 @@ video::-webkit-media-controls-panel {
 
     .navbar {
         justify-content: right;
-        height: 10.5vh;
+        height: 6.5vh;
         z-index: 1001;
     }
 
+    .navbar a{
+        width: 50vw;
+    }
+
     .logo{
-        width: 39vw;
+        width: 25vw;
         align-self: center;
-        margin-left: -1em;
+        margin-left: 0em;
     }
 
     .second-section{
@@ -990,9 +995,9 @@ video::-webkit-media-controls-panel {
     }
 
     .ftimg {
-        width: 30vw;
+        width: 25vw;
         vertical-align: middle;
-        height: 15vh;
+        /* height: 15vh; */
         
     }
 
@@ -1002,11 +1007,12 @@ video::-webkit-media-controls-panel {
         color: white;
         display: grid;
         gap: 2em;
-        width: 100vw;
+        width: 99vw;
         grid-template-columns:repeat(1, auto);
         margin-left: 0em;
         text-align: center;
         justify-items: center;
+        justify-content: center;
     }
 
     .footer .footer-item {

@@ -41,6 +41,8 @@ header{
     color: white;
     transition: 0.25s;
     padding: 10px 10px;
+    align-self: center;
+    width: 11.5vw;
 }
 
 .navli a.active{
@@ -51,9 +53,9 @@ header{
 }
 
 .logo {
-    width: 9vw;
+    width: 7vw;
     align-self: center;
-    top: 13%;
+    top: 15%;
     /* height: 5vh; */
     position: absolute;
     justify-items:left;
@@ -308,6 +310,7 @@ iframe{
 
 .footer .slink{
     padding-left: 2rem;
+    margin-top: 1rem;
 }
 
  .span{
@@ -317,9 +320,9 @@ iframe{
 }
 
 .ftimg {
-    width: 10vw;
+    width: 7vw;
     vertical-align: middle;
-    height: 15vh;
+    background: none;
 }
 
 .footer{
@@ -425,9 +428,9 @@ iframe{
     }
 
    .ftimg {
-        width: 30vw;
+        width: 25vw;
         vertical-align: middle;
-        height: 15vh;
+        /* height: 15vh; */
         
     }
 
@@ -437,7 +440,7 @@ iframe{
         color: white;
         display: grid;
         gap: 2em;
-        width: 100vw;
+        width: 99vw;
         grid-template-columns:repeat(1, auto);
         margin-left: 0em;
         text-align: center;
@@ -493,14 +496,18 @@ iframe{
 
     .navbar {
         justify-content: right;
-        height: 10.5vh;
+        height: 6.5vh;
         z-index: 1001;
     }
 
+    .navbar a{
+        width: 50vw;
+    }
+
     .logo{
-        width: 39vw;
+        width: 25vw;
         align-self: center;
-        margin-left: -1em;
+        margin-left: 0em;
     }
 
    .fa-bars {
@@ -521,11 +528,14 @@ iframe{
         margin: auto auto;
         border-width: thin;
         padding-top: 20em;
+        margin-bottom: 0;
     }
 
     button {
-        width: 80%;
-        font-size: 130%;
+        width: 80vw;
+        font-size: 110%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 
@@ -542,7 +552,7 @@ iframe{
 
     .maps{
         margin: auto auto;
-        margin-top: -25em;
+        margin-top: -15em;
         margin-bottom: 15em;
         padding: 0px 0px 0px 0px;
         text-align: center;

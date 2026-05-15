@@ -39,6 +39,8 @@ header{
     color: white;
     transition: 0.25s;
     padding: 10px 10px;
+    align-self: center;
+    width: 11.5vw;
 }
 
 .navli a.active{
@@ -49,9 +51,9 @@ header{
 }
 
 .logo {
-    width: 9vw;
+    width: 7vw;
     align-self: center;
-    top: 13%;
+    top: 15%;
     /* height: 5vh; */
     position: absolute;
     justify-items:left;
@@ -237,6 +239,7 @@ header{
 
 .footer .slink{
     padding-left: 2rem;
+    margin-top: 1rem;
 }
 
  .span{
@@ -246,9 +249,9 @@ header{
 }
 
 .ftimg {
-    width: 10vw;
+    width: 7vw;
     vertical-align: middle;
-    height: 15vh;
+    background: none;
 }
 
 .footer{
@@ -350,10 +353,8 @@ header{
     }
 
    .ftimg {
-        width: 30vw;
-        vertical-align: middle;
-        height: 15vh;
-        
+        width: 25vw;
+        vertical-align: middle; 
     }
 
     .footer{
@@ -362,7 +363,7 @@ header{
         color: white;
         display: grid;
         gap: 2em;
-        width: 100vw;
+        width: 99vw;
         grid-template-columns:repeat(1, auto);
         margin-left: 0em;
         text-align: center;
@@ -416,16 +417,20 @@ header{
         display: none;
     }
 
-    .navbar {
+   .navbar {
         justify-content: right;
-        height: 10.5vh;
+        height: 6.5vh;
         z-index: 1001;
     }
 
+    .navbar a{
+        width: 50vw;
+    }
+
     .logo{
-        width: 39vw;
+        width: 25vw;
         align-self: center;
-        margin-left: -1em;
+        margin-left: 0em;
     }
 
     .fa-bars {

@@ -41,6 +41,8 @@ header{
     color: white;
     transition: 0.25s;
     padding: 10px 10px;
+    align-self: center;
+    width: 11.5vw;
 }
 
 .navli a.active{
@@ -51,9 +53,9 @@ header{
 }
 
 .logo {
-    width: 9vw;
+    width: 7vw;
     align-self: center;
-    top: 13%;
+    top: 15%;
     /* height: 5vh; */
     position: absolute;
     justify-items:left;
@@ -229,6 +231,7 @@ header{
 
 .footer .slink{
     padding-left: 2rem;
+    margin-top: 1rem;
 }
 
  .span{
@@ -238,9 +241,9 @@ header{
 }
 
 .ftimg {
-    width: 10vw;
+    width: 7vw;
     vertical-align: middle;
-    height: 15vh;
+    background: none;
 }
 
 .footer{
