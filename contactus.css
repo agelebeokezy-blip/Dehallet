@@ -98,6 +98,10 @@ header{
     display: none;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 /* sidemenu style */
 
 .sidemenu{
@@ -296,7 +300,6 @@ iframe{
     padding: 10px 10px 10px 10px;
 }
 
-
 /* style for footer */
 
 .footer-section{
@@ -307,6 +310,16 @@ iframe{
     font-family: "Bricolage Grotesque", sans-serif;
     border-top: 1px solid rgb(141, 122, 96);
     padding-top: 3em;
+}
+
+.footer-section .hr{
+    width: 100vw;
+    justify-self: center;
+    margin-top: 2em;
+    border: 1px solid rgb(141, 122, 96);
+    border-bottom: none;
+    margin-bottom: -1em;
+    display: none;
 }
 
 .footer .slink{
@@ -365,18 +378,16 @@ iframe{
 }
 
 .footer i {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
-.fa-instagram:hover {
-    font-size: 29px; 
+.fa-instagram:hover { 
     color: rgb(141, 122, 96);  
 }
 
 
-.fa-tiktok:hover {
-    font-size: 29px; 
+.fa-tiktok:hover { 
     color: rgb(141, 122, 96);
 }
 
@@ -393,19 +404,9 @@ iframe{
 }
 
 .fa-whatsapp:hover {
-    font-size: 29px;
     color: rgb(141, 122, 96);
 }
 
-.footer-section .hr{
-    width: 30vw;
-    justify-self: center;
-    margin-top: 2em;
-    border: 1px solid rgb(141, 122, 96);
-    border-bottom: none;
-    margin-bottom: -1em;
-    display: none;
-}
 
 /* Responsiveness */
 

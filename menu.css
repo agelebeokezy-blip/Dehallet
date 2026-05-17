@@ -91,27 +91,13 @@ header{
 }
 
 .fa-bars {
-    font-size: 2em;
+    font-size: 0.001em;
     color: white;
+    display: none;
 }
 
-.Home-photo{
-    display: flex;
-    animation-name: bground;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
-}
-
-.Home-photo img{
-    opacity: 60%;
-    height: 950px;
-}
-
-.Home-photo h1{
-    position: absolute;
-    align-self: center;
-    font-size: 4em;
-    margin-left: 7em;
+::-webkit-scrollbar{
+    display: none;
 }
 
 /* sidemenu style */
@@ -183,47 +169,107 @@ header{
     pointer-events: all;
 }
 
-/* cards section */
+/* Drinks body */
 
-
-.second-section-div2{
-    display: grid;
-    grid-template-columns: repeat(2, 15vw);
-    gap: 3em;
-    justify-content: center;
-    margin-top: 10em;
-    background: rgb(54, 54, 54);
-    width: 55em;
-    margin-left: 12em;
-    height: 25em;
-    text-align: center;
-    font-size: 1.5em;
-    border-radius: 20px;
-    font-family: "Bricolage Grotesque", sans-serif;
+.flex-box{
+    display: flex;
+    height: 62vh;
+    width: 100vw;
     align-items: center;
-    border: 2px solid rgb(54, 54, 54);
-    margin-bottom: 10em;
+    margin-top: 5em;
+    background: rgb(141, 122, 96);
+    gap: 1%;
 }
 
-.second-section-div2 img{
-    border-radius: 20px;
-    transition: 0.25s;
-    border: 2px solid rgb(226, 206, 180);
-    margin-left: -0.1em;
+.flex-box h1{
+    font-size: 400%;
+    margin-left: 3%;
+    z-index: 2;
+    font-weight: lighter;
 }
 
-.second-section-div2 img:hover{
-    width: 98%;
+.flex-box hr{
+    width: 1px;
+    border: 1px solid white;
+    height: 50vh;
+    border-left: none;
 }
 
-.second-section-div2 .card-link{
-    transition: 0.25s;
-    color: rgb(226, 206, 180)
+.flex-box h4{
+    line-height: 1.5;
+    z-index: 2;
+    font-weight: lighter;
+    margin-top: -2%;
 }
 
-.second-section-div2 .card-link:hover{
-    border-bottom: 2px solid rgb(226, 206, 180);
-    font-size: 1.2em;
+.flex-box span{
+    color: rgb(15, 13, 13);
+}
+
+.flex-box img{
+    width: 50vw;
+    height: 62vh;
+    position: absolute;
+    right: 0%;
+    z-index: 2;
+}
+
+.overlayy{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    height: 70.5vh;
+    width: 100vw;
+}
+
+h4{
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 2em;
+    /* margin-bottom: 5%; */
+    font-size: 100%;
+}
+
+.menuu h2{
+    text-align: center;
+    font-weight: lighter;
+    /* color: rgb(141, 122, 96); */
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background: rgb(141, 122, 96);
+    width: 85vw;
+    justify-self: center;
+}
+
+.menuu h3{
+    border-bottom: 1px solid rgb(141, 122, 96);
+    width: 40vw;
+    color: white;
+    font-weight: lighter;
+    padding-left: 1%;
+    margin-bottom: 2%;
+    font-size: 140%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    font-family: "Kings", cursive;
+    justify-self: center;
+}
+
+.menuu p{
+    font-size: 120%;
+    color: rgb(141, 122, 96);
+    margin-left: 10%;
+    line-height: 2;
+    margin-bottom: 2%;
+    font-family: "Kings", cursive;
+}
+
+.menuu span{
+    position: absolute;
+    left: 80%;
+    color: white;
+    font-family: "Kings", cursive;
 }
 
 /* style for footer */
@@ -236,6 +282,16 @@ header{
     font-family: "Bricolage Grotesque", sans-serif;
     border-top: 1px solid rgb(141, 122, 96);
     padding-top: 3em;
+}
+
+.footer-section .hr{
+    width: 100vw;
+    justify-self: center;
+    margin-top: 2em;
+    border: 1px solid rgb(141, 122, 96);
+    border-bottom: none;
+    margin-bottom: -1em;
+    display: none;
 }
 
 .footer .slink{
@@ -294,7 +350,7 @@ header{
 }
 
 .footer i {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
@@ -323,14 +379,6 @@ header{
     color: rgb(141, 122, 96);
 }
 
-.footer-section .hr{
-    width: 30vw;
-    justify-self: center;
-    margin-top: 2em;
-    border: 1px solid rgb(141, 122, 96);
-    border-bottom: none;
-    margin-bottom: -1em;
-}
 
 /* Responsiveness */
 
