@@ -525,4 +525,92 @@ h4{
     .footer-section .hr{
         width: 50vw;
     }
+
+    .flex-box{
+        height: 52vh;
+        margin-top: 4em;
+        background-image: url(Images-logos/magnific__exquisite-whisky-drinks-and-wine-bottle-plate-of-c__39686.png);
+        background-size: 100% 100%;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+    }
+
+    .flex-box h1{
+        font-size: 100%;
+        margin-left: 3%;
+    }
+
+    .flex-box hr{
+        border: 2px solid white;
+        height: 40vh;
+    }
+
+    .flex-box h4{
+        margin-top: -1%;
+        font-size: 75%;
+    }
+
+    .flex-box span{
+        color: rgb(141, 122, 96);
+    }
+
+    .flex-box img{
+        display: none;
+    }
+
+    .overlayy{
+        background: rgba(0,0,0,0.7);
+        height: 60vh;
+    }
+
+    h4{
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 2em;
+        /* margin-bottom: 5%; */
+        font-size: 90%;
+    }
+
+.menuu h2{
+        text-align: center;
+        font-weight: lighter;
+        /* color: rgb(141, 122, 96); */
+        margin-bottom: 20%;
+        margin-top: 20%;
+        background: rgb(141, 122, 96);
+        width: 95vw;
+        justify-self: center;
+        font-size: 100%;
+    }
+
+    .menuu h3{
+        border-bottom: 1px solid rgb(141, 122, 96);
+        width: 60vw;
+        color: white;
+        font-weight: lighter;
+        padding-left: 1%;
+        margin-bottom: 2%;
+        font-size: 100%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        text-align: center;
+        font-family: "Kings", cursive;
+        justify-self: center;
+    }
+
+    .menuu p{
+        font-size: 80%;
+        color: rgb(141, 122, 96);
+        margin-left: 10%;
+        line-height: 2;
+        margin-bottom: 2%;
+        font-family: "Kings", cursive;
+    }
+
+    .menuu span{
+        position: absolute;
+        left: 80%;
+        color: white;
+        font-family: "Kings", cursive;
+    }
 }
