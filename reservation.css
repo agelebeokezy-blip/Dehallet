@@ -141,15 +141,16 @@ header{
     top: 0;
     position: absolute;
     background: rgba(0,0,0,0.6);
-    align-content: center;
     text-align: center;
     font-weight: lighter;
     color: rgb(141, 122, 96);
+    justify-content: center;
 }
 
 .slide-frame .overlayy h2{
     font-size: 300%;
     font-weight: lighter;
+    margin-top: 30vh;
 }
 
 .slide-frame .overlayy h3{
