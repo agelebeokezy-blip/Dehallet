@@ -205,6 +205,7 @@ header{
     input:-webkit-autofill:focus, 
     input:-webkit-autofill:active{
         -webkit-box-shadow: 0 0 0 30px rgba(19, 18, 18, 0.99) inset !important;
+        transition: background-color 5000s ease-in-out 0s;
     }
 
     /*Change text in autofill textbox*/
