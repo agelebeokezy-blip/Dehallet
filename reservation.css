@@ -326,13 +326,14 @@ header{
 .concent input{
     background: transparent !important;
     accent-color:  rgb(141, 122, 96) !important;
-    appearance: none !important;
+    appearance: none;
     width: 3% !important;
     height: 3% !important;
     aspect-ratio: 1/1 !important;
     border: 1px solid white !important;
     border-radius: 5px !important;
     margin-right: 10px !important;
+    margin-top: 0.5em;
 }
 
 input[type="checkbox"]:checked {
@@ -649,9 +650,8 @@ button:hover {
 
     .concent input{
         width: 4vw !important;
-        height: 4vw !important;
+        height: 2vh !important;
         aspect-ratio: 1/1 !important;
-        margin-top: 0.5em !important;
     } 
       
     .image-container img{
