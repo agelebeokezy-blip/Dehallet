@@ -648,10 +648,10 @@ button:hover {
     }
 
     .concent input{
-        width: 4vw;
-        height: 4vw;
-        aspect-ratio: 1/1;
-        margin-top: 0.5em;
+        width: 4vw !important;
+        height: 4vw !important;
+        aspect-ratio: 1/1 !important;
+        margin-top: 0.5em !important;
     } 
       
     .image-container img{

@@ -581,12 +581,12 @@ iframe{
         width: 85vw;
     }
 
-    .concent input{
-        width: 4vw;
-        height: 4vw;
-        aspect-ratio: 1/1;
-        margin-top: 0.5em;
-    } 
+   .concent input{
+        width: 4vw !important;
+        height: 4vw !important;
+        aspect-ratio: 1/1 !important;
+        margin-top: 0.5em !important;
+    }  
 
     h4{
         width: 90vw;
