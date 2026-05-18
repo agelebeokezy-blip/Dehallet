@@ -252,7 +252,6 @@ h4{
     padding-top: 1px;
     padding-bottom: 1px;
     text-align: center;
-    font-family: "Kings", cursive;
     justify-self: center;
 }
 
@@ -262,14 +261,12 @@ h4{
     margin-left: 10%;
     line-height: 2;
     margin-bottom: 2%;
-    font-family: "Kings", cursive;
 }
 
 .menuu span{
     position: absolute;
     left: 80%;
     color: white;
-    font-family: "Kings", cursive;
 }
 
 /* style for footer */
@@ -560,7 +557,7 @@ h4{
 
     .overlayy{
         background: rgba(0,0,0,0.7);
-        height: 60vh;
+        height: 61vh;
     }
 
     h4{
@@ -578,7 +575,7 @@ h4{
         margin-bottom: 20%;
         margin-top: 20%;
         background: rgb(141, 122, 96);
-        width: 95vw;
+        width: 100vw;
         justify-self: center;
         font-size: 100%;
     }
@@ -594,7 +591,6 @@ h4{
         padding-top: 1px;
         padding-bottom: 1px;
         text-align: center;
-        font-family: "Kings", cursive;
         justify-self: center;
     }
 
@@ -604,13 +600,11 @@ h4{
         margin-left: 10%;
         line-height: 2;
         margin-bottom: 2%;
-        font-family: "Kings", cursive;
     }
 
     .menuu span{
         position: absolute;
         left: 80%;
         color: white;
-        font-family: "Kings", cursive;
     }
 }

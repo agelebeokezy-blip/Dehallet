@@ -144,27 +144,23 @@ header{
     align-content: center;
     text-align: center;
     font-weight: lighter;
-    font-family: "Petit Formal Script", cursive;
     color: rgb(141, 122, 96);
 }
 
 .slide-frame .overlayy h2{
     font-size: 300%;
     font-weight: lighter;
-    font-family: "Petit Formal Script", cursive;
 }
 
 .slide-frame .overlayy h3{
     font-size: 120%;
     font-weight: lighter;
-    font-family: "Petit Formal Script", cursive;
     margin-top: 1%
 }
 
 .slide-frame .overlayy h4{
     font-size: 150%;
     font-weight: lighter;
-    font-family: "Petit Formal Script", cursive;
     margin-top: 1%;
 }
 
@@ -695,27 +691,23 @@ button:hover {
         align-content: center;
         text-align: center;
         font-weight: bold;
-        font-family: "Petit Formal Script", cursive;
         color: rgb(141, 122, 96);
     }
 
     .slide-frame .overlayy h2{
         font-size: 120%;
         font-weight: lighter;
-        font-family: "Petit Formal Script", cursive;
     }
 
     .slide-frame .overlayy h3{
         font-size: 90%;
         font-weight: lighter;
-        font-family: "Petit Formal Script", cursive;
         margin-top: 1%
     }
 
     .slide-frame .overlayy h4{
         font-size: 100%;
         font-weight: lighter;
-        font-family: "Petit Formal Script", cursive;
         margin-top: 1%;
     }
 }
