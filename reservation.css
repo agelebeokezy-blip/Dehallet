@@ -324,15 +324,15 @@ header{
 }
 
 .concent input{
-    background: transparent;
-    accent-color:  rgb(141, 122, 96);
-    appearance: none;
-    width: 3%;
-    height: 3%;
-    aspect-ratio: 1/1;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin-right: 10px;
+    background: transparent !important;
+    accent-color:  rgb(141, 122, 96) !important;
+    appearance: none !important;
+    width: 3% !important;
+    height: 3% !important;
+    aspect-ratio: 1/1 !important;
+    border: 1px solid white !important;
+    border-radius: 5px !important;
+    margin-right: 10px !important;
 }
 
 input[type="checkbox"]:checked {
