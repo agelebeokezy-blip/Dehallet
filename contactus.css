@@ -186,7 +186,7 @@ header{
 .reservation-box{
     position: relative;
     width: 50vw;
-    background: rgba(19, 18, 18, 0.99);
+    background: none;
     border-radius: 30px;
     border: 1px solid gray;
     align-items: center;
@@ -198,6 +198,19 @@ header{
     margin-bottom: 200px;  
     line-height: 1.5;
 }
+
+/* Change the white to any color */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px rgba(19, 18, 18, 0.99) inset !important;
+    }
+
+    /*Change text in autofill textbox*/
+    input:-webkit-autofill{
+        -webkit-text-fill-color: white !important;
+    }
 
 .input-box {
     width: 90%;
@@ -264,16 +277,18 @@ input[type="checkbox"]:checked {
 }
 
 button {
-    width: 90%;
-    height: 70px;
+    padding: 3%;
     background: rgb(141, 122, 96);
     color: black;
     border: none;
     outline: none;
     border-radius: 40px;
-    margin: 30px;
-    font-size: 28px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 150%;
     transition: 0.25s;
+    width: 90%;
+    justify-self: center;
 }
 
 button:hover {

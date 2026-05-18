@@ -37,6 +37,7 @@ header{
     font-family: "Bricolage Grotesque", sans-serif;
     backdrop-filter: blur(5px);
     border-bottom: 1px solid rgb(141, 122, 96);
+    top: 0;
 }
 
 .navbar a {
@@ -106,30 +107,65 @@ header{
 
 /* body */
 
-.headd {
+/* .headd {
     font-size: 200%;
     text-align: center;
-    margin-top: 6em;
+    margin-top: 1em;
     font-weight: lighter;
-}
+} */
 
 .headd1 {
     text-align: center;
     margin-left: 3em;
     margin-right: 3em;
+    font-weight: lighter;
+    margin-top: 5%;
 }
 
 /* slides */
 
 .slide-frame{
-    height: 800px;
+    height: 75vh;
     width: 100%;
 }
 
 .image-container img{
-    height: 1000px;
-    width: 100%;
-    opacity: 90%; 
+    height: 75vh;
+    width: 100%; 
+    /* filter: blur(8px); */
+}
+
+.slide-frame .overlayy{
+    height: 75vh;
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    align-content: center;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Petit Formal Script", cursive;
+    color: rgb(141, 122, 96);
+}
+
+.slide-frame .overlayy h2{
+    font-size: 300%;
+    font-weight: lighter;
+    font-family: "Petit Formal Script", cursive;
+}
+
+.slide-frame .overlayy h3{
+    font-size: 120%;
+    font-weight: lighter;
+    font-family: "Petit Formal Script", cursive;
+    margin-top: 1%
+}
+
+.slide-frame .overlayy h4{
+    font-size: 150%;
+    font-weight: lighter;
+    font-family: "Petit Formal Script", cursive;
+    margin-top: 1%;
 }
 
 
@@ -216,7 +252,7 @@ header{
     position: relative;
     width: 50vw;
     height: fit-content;
-    background: rgba(19, 18, 18, 0.99);
+    background: none;
     border-radius: 30px;
     border: 2px solid gray;
     display: flex;
@@ -230,6 +266,22 @@ header{
     font-family: "Bricolage Grotesque", sans-serif;
     line-height: 1.5;
 }
+
+    /* Change the white to any color */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px rgba(19, 18, 18, 0.99) inset !important;
+    }
+
+    /*Change text in autofill textbox*/
+    input:-webkit-autofill{
+        -webkit-text-fill-color: white !important;
+    }
+
+
+
 
 .input-box {
     width: 90%;
@@ -294,16 +346,18 @@ input[type="checkbox"]:checked {
 }
 
 button {
-    width: 90%;
-    height: 70px;
+    padding: 3%;
     background: rgb(141, 122, 96);
     color: black;
     border: none;
     outline: none;
     border-radius: 40px;
-    margin: 30px;
-    font-size: 28px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 150%;
     transition: 0.25s;
+    width: 90%;
+    justify-self: center;
 }
 
 button:hover {
@@ -582,20 +636,12 @@ button:hover {
         margin-right: 0;
     }
 
-
-    .headd{
-        margin-top: -8em;
-        width: 100vw;
-        margin-left: 0;
-        margin-right: 0;
-        color: white;
-    }
-
     .headd1{
         width: 100vw;
         margin-left: 0;
         padding: 20px;
         font-weight: lighter;
+        font-size: 100%;
     }
 
     .reservation{
@@ -627,6 +673,50 @@ button:hover {
 
     .footer-section .hr{
         width: 50vw;
+    }
+
+    .slide-frame{
+        height: 65vh;
+        width: 100%;
+    }
+
+    .image-container img{
+        height: 65vh;
+        width: 100%; 
+        /* filter: blur(8px); */
+    }
+
+    .slide-frame .overlayy{
+        height: 65vh;
+        width: 100vw;
+        top: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.6);
+        align-content: center;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Petit Formal Script", cursive;
+        color: rgb(141, 122, 96);
+    }
+
+    .slide-frame .overlayy h2{
+        font-size: 120%;
+        font-weight: lighter;
+        font-family: "Petit Formal Script", cursive;
+    }
+
+    .slide-frame .overlayy h3{
+        font-size: 90%;
+        font-weight: lighter;
+        font-family: "Petit Formal Script", cursive;
+        margin-top: 1%
+    }
+
+    .slide-frame .overlayy h4{
+        font-size: 100%;
+        font-weight: lighter;
+        font-family: "Petit Formal Script", cursive;
+        margin-top: 1%;
     }
 }
 
