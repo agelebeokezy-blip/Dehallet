@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Bitcount+Grid+Double:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Festive&family=Gabriela&family=Kings&family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Macondo+Swash+Caps&family=Manrope:wght@200..800&family=Mea+Culpa&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monsieur+La+Doulaise&family=Permanent+Marker&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -1176,3 +1178,5 @@ video::-webkit-media-controls-panel {
         margin-right: auto;
     }
 }
+
+
