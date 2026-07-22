@@ -21,20 +21,26 @@ header{
     background: black;
 }
 
-.navbar {
-    position: fixed;
-    background: rgba(29, 28, 28, 0.99);
-    color: white;
-    padding: 30px 30px;
+.navbar{
     display: flex;
-    justify-content: center;
+    position: fixed;
     width: 100vw;
-    box-sizing: border-box;
+    height: 8vh;
+    color: white;
+    justify-content: center;
+    top: 0;
     align-items: center;
     z-index: 3;
-    font-family: "Bricolage Grotesque", sans-serif;
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgb(141, 122, 96);
+   transition: all 0.8s ease;
+   border-bottom: 1px solid transparent;
+}
+
+.navbar.show{
+    border-bottom: 1px solid rgba(212, 185, 138, 0.3);
+    background: rgba(19, 18, 18, 0.99) !important;
+    backdrop-filter:  blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    transition: all 0.8s ease;
 }
 
 .navbar a {

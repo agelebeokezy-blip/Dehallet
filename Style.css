@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Bitcount+Grid+Double:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Festive&family=Gabriela&family=Kings&family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Macondo+Swash+Caps&family=Manrope:wght@200..800&family=Mea+Culpa&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monsieur+La+Doulaise&family=Permanent+Marker&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Arimo:ital,wght@0,400..700;1,400..700&family=Jim+Nightshade&display=swap');
 
 *{
     padding: 0px;
@@ -6,9 +7,10 @@
     text-decoration: none;
     list-style: none;
     overflow-x: clip;
-    /* outline: 1px solid red !important; */
     box-sizing: border-box;
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Amarante", serif;
+    font-weight: lighter;
+    
 }
 
 body {
@@ -16,22 +18,44 @@ body {
     color: white;
 }
 
+/* Scrolling animation */
+
+.scroll{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.scroll.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* this is the header styling */
 
-.navbar {
-    position: fixed;
-    background: rgba(29, 28, 28, 0.99);
-    color: white;
-    padding: 30px 30px;
+.navbar{
     display: flex;
-    justify-content: center;
+    position: fixed;
     width: 100vw;
-    box-sizing: border-box;
-    /* align-items: center; */
-    z-index: 3;
-    font-family: "Bricolage Grotesque", sans-serif;
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgb(141, 122, 96);
+    height: 8vh;
+    color: rgb(141, 122, 96);
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    z-index: 5;
+   transition: all 0.8s ease;
+   border-bottom: 1px solid transparent;
+    animation: head;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+.navbar.show{
+    border-bottom: 1px solid rgba(212, 185, 138, 0.3);
+    background: rgba(19, 18, 18, 0.99) !important;
+    backdrop-filter:  blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    transition: all 0.8s ease;
 }
 
 .navbar a {
@@ -40,6 +64,7 @@ body {
     padding: 10px 10px;
     align-self: center;
     width: 11.2vw;
+    letter-spacing: 1.5px;
 }
 
 .navli a.active{
@@ -79,7 +104,6 @@ body {
     top:20px;
     text-transform: uppercase;
     transition: 0.25s;
-    font-family: "Bricolage Grotesque", sans-serif;
     width: fit-content;
 }
 
@@ -111,6 +135,19 @@ body {
 
 .Home-photo img{
     height: 100%;
+    animation: intro;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes intro{
+    0%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 /* sidemenu style */
@@ -152,28 +189,27 @@ body {
 /* overlay style */
 
 .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
-    opacity: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 1;
     pointer-events: none;
     transition: 0.3s;
-    z-index: 999;
 }
 
     /* When menu is active */
 
 .overlay.active {
-    opacity: 1;
+    opacity: 0;
     pointer-events: all;
 }
 
 .first-section .intro{
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     top: 0;
     width: 100vw;
     position: absolute;
@@ -183,10 +219,12 @@ body {
     z-index: 1;
     /* align-content: center; */
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .first-section .intro h3{
-    /* margin-top: 5%; */
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -200,6 +238,10 @@ body {
     font-size: 2rem;
     font-weight: lighter;
     cursor: pointer;
+    color: white;
+    animation: head;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
 }
 
 .first-section .intro h3:hover{
@@ -211,21 +253,45 @@ body {
 .first-section .intro h1{
     font-size: 7rem;
     font-weight: lighter;
-    /* align-self: center; */
-    margin-top: 25vh;
+    animation: head;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
 }
 
 .first-section .intro h2{
     margin-bottom: 1.5rem;
     font-weight: lighter;
     font-size: 3em;
+    animation: head;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
 }
 
 .first-section .intro p{
     font-size: 1.3rem;
     justify-self: center;
     width: 600px;
-    /* color: rgb(141, 122, 96); */
+    animation: head;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+@keyframes head{
+
+ 0%{
+    opacity: 0;
+ }
+
+ 75%{
+    opacity: 0;
+    margin-top: 1em;
+ }
+
+ 100%{
+    opacity: 1;
+    margin-top: 0em;
+ }
+
 }
 
 .sidemenu ul li{
@@ -234,7 +300,6 @@ body {
 
 .sidemenu ul li a{
     color: white;
-    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 1.5em;
 }
 
@@ -246,7 +311,6 @@ body {
     background: rgba(19, 18, 18, 0.99);
     height: fit-content;
     text-align: center;
-    font-family: "Bricolage Grotesque", sans-serif;
     padding-bottom: 5em;
     border-top: 1px solid rgb(141, 122, 96);
     font-size: 100%;
@@ -257,7 +321,6 @@ body {
     grid-template-columns: repeat(2, 30vw);
     width: 100%;
     gap: 3%;
-    font-family: "Bricolage Grotesque", sans-serif;
     justify-content: center;
     height: fit-content;
     text-align: left;
@@ -276,10 +339,8 @@ body {
 }
 
 .second-section-div h1{
-   font-family: "Bricolage Grotesque", sans-serif;
     font-size: 200%;
     font-weight: lighter;
-
 }
 
 .second-section-div img{
@@ -299,7 +360,7 @@ body {
 .second-section-div a{
     position: relative;
     padding: 6px;
-    border: 1px solid rgb(226, 206, 180);
+    border: 1px solid rgb(141, 122, 96);
     font-size: larger;
     margin-top: auto;
     font-style: normal;
@@ -316,8 +377,8 @@ body {
 
 .second-section h1{
     margin-top: 0em;
-    font-family: "Bricolage Grotesque", sans-serif;
     margin-bottom: -0.5em;
+    color: rgb(141, 122, 96);
 }
 
 .second-section .hh1{
@@ -429,6 +490,9 @@ video::-webkit-media-controls-panel {
     padding-top: 2em;
     padding-bottom: 2em;
     gap: 1em;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -440,6 +504,8 @@ video::-webkit-media-controls-panel {
     width: 16vw;
     border: 2px solid transparent;
     border-radius: 20px;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
 }
 
 .second-section .grid-item img{
@@ -463,8 +529,6 @@ video::-webkit-media-controls-panel {
 }
 
 .grid-item h3{
-    /* color: rgb(226, 206, 180); */
-    font-family: "Bricolage Grotesque", sans-serif;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-weight: lighter;
@@ -474,7 +538,6 @@ video::-webkit-media-controls-panel {
 .grid-item h5{
     color: gray;
     font-weight: 400;
-    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .event-container .link{
@@ -487,9 +550,7 @@ video::-webkit-media-controls-panel {
     padding: 10px 10px;
     align-items: center;
     transition: 0.25s;
-    /* background: rgb(133, 103, 62); */
     color: white;
-    font-family: "Bricolage Grotesque", sans-serif;
     border-radius: 5px;
 }
 
@@ -502,6 +563,7 @@ video::-webkit-media-controls-panel {
     font-size: 2em;
     margin-top: -3em;
     position: absolute;
+    z-index: 1;
 }
 
 .event-container .fa-chevron-right{
@@ -540,7 +602,6 @@ video::-webkit-media-controls-panel {
 /* image slider */
 
 .flex-img-title{
-    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 200%;
     padding-top: 15vh;
     font-weight: lighter;
@@ -548,7 +609,7 @@ video::-webkit-media-controls-panel {
 
 .flex-img{
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100vw;
     height: 50vh;
     gap: 1%;
@@ -571,6 +632,7 @@ video::-webkit-media-controls-panel {
 .flex-img i{
     font-size: 2em;
     position: absolute;
+    z-index: 1;
 }
 
 .flex-img .rght-button{
@@ -630,21 +692,25 @@ video::-webkit-media-controls-panel {
 .faq .faq1 .flexp{
     display: flex;
     align-items: center;
+    transition: 0.25s;
 }
 
 .faq p{
     text-align: left;
     width: 95%;
     color: rgb(189, 188, 188);
+    transition: 0.25s;
 }
 
 .faq .faq1{
     margin-bottom: 2em;
+    transition: 0.25s;
 }
 
 .faq .faq1 i{
    display: flex;
    justify-content: flex-end;
+   transition: 0.25s;
 }
 
 .faq .faq1 hr{
@@ -654,18 +720,22 @@ video::-webkit-media-controls-panel {
 
 .faq .p1{
     display: none;
+    transition: 0.25s;
 }
 
 .faq .p2{
     display: none;
+    transition: 0.25s;
 }
 
 .faq .p3{
     display: none;
+    transition: 0.25s;
 }
 
 .faq .p4{
     display: none;
+    transition: 0.25s;
 }
 
 /* style for footer */
@@ -675,7 +745,6 @@ video::-webkit-media-controls-panel {
     background: rgba(29, 28, 28, 0.99);
     color: white;
     padding-bottom: 1em;
-    font-family: "Bricolage Grotesque", sans-serif;
     border-top: 1px solid rgb(141, 122, 96);
     padding-top: 3em;
 }
@@ -938,7 +1007,6 @@ video::-webkit-media-controls-panel {
     }
 
     .flex-img-title{
-        font-family: "Bricolage Grotesque", sans-serif;
         font-size: 200%;
         font-weight: 100;
     }
@@ -1153,7 +1221,6 @@ video::-webkit-media-controls-panel {
         transition: 0.25s;
         background: rgb(133, 103, 62);
         color: white;
-        font-family: "Bricolage Grotesque", sans-serif;
         border-radius: 10px;
     }
 
