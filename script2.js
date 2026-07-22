@@ -115,13 +115,14 @@ explore.addEventListener('click', () =>{
   const backBtn = document.querySelector('.lft-button');
   const fwrdBtn = document.querySelector('.rght-button');
   const containerx = document.querySelector('.flex-img')
+  const imagew = document.querySelector(".flex-img .imgg")
 
   backBtn.addEventListener('click', () => {
-    containerx.scrollBy({ left: -window.innerWidth, behavior: 'smooth' });
+    containerx.scrollBy({ left: -imagew.clientWidth - 20, behavior: 'smooth' });
   });
 
   fwrdBtn.addEventListener('click', () => {
-    containerx.scrollBy({ left: window.innerWidth, behavior: 'smooth' });
+    containerx.scrollBy({ left: imagew.clientWidth + 20, behavior: 'smooth' });
   });
 
   // event container buttons display
