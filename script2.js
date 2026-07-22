@@ -4,13 +4,14 @@
 const prevBtn = document.querySelector('.fa-chevron-left');
 const nextBtn = document.querySelector('.fa-chevron-right');
 const container = document.querySelector('.event-container')
+const griditem = document.querySelector(".grid-item")
 
 prevBtn.addEventListener('click', () => {
-  container.scrollBy({ left: -329, behavior: 'smooth' });
+  container.scrollBy({ left: -griditem.clientWidth, behavior: 'smooth' });
 });
 
 nextBtn.addEventListener('click', () => {
-  container.scrollBy({ left: 329, behavior: 'smooth' });
+  container.scrollBy({ left: griditem.clientWidth, behavior: 'smooth' });
 });
 
 // event container buttons display
@@ -118,11 +119,21 @@ explore.addEventListener('click', () =>{
   const imagew = document.querySelector(".flex-img .imgg")
 
   backBtn.addEventListener('click', () => {
-    containerx.scrollBy({ left: -imagew.clientWidth - 20, behavior: 'smooth' });
+    if (imagew.clientWidth == window.innerWidth){
+      containerx.scrollBy({ left: -imagew.clientWidth, behavior: 'smooth' });
+    }
+    else{
+      containerx.scrollBy({ left: -imagew.clientWidth - 20, behavior: 'smooth' });
+    }
   });
 
   fwrdBtn.addEventListener('click', () => {
-    containerx.scrollBy({ left: imagew.clientWidth + 20, behavior: 'smooth' });
+    if (imagew.clientWidth == window.innerWidth){
+      containerx.scrollBy({ left: imagew.clientWidth, behavior: 'smooth' });
+    }
+    else{
+      containerx.scrollBy({ left: imagew.clientWidth + 20, behavior: 'smooth' });
+    }
   });
 
   // event container buttons display

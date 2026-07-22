@@ -1164,6 +1164,10 @@ video::-webkit-media-controls-panel {
         justify-self: center;
     }
 
+    .video-pic-grid .img h3{
+        padding-right: 5%;
+    }
+
     .video-pic-grid .img:hover{
         border: 2px solid rgb(141, 122, 96);
     }
