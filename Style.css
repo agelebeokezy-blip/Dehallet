@@ -963,6 +963,8 @@ video::-webkit-media-controls-panel {
         align-items: center;
         margin-top: 1em;
         gap: 2%;
+        overflow: auto;
+        overflow-y: hidden;
     }
 
     .event-container .grid-item{
@@ -973,6 +975,7 @@ video::-webkit-media-controls-panel {
 
     .event-container i{
         font-size: 150%;
+        display: none;
     }
 
     .second-section .hh1{
