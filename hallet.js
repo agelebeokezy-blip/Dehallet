@@ -55,18 +55,56 @@ document.querySelectorAll('nav a').forEach(link => {
                 video1.forEach(v1 =>{
                     v1.addEventListener("click", ()=>{
 
-                    if(videoplayer.style.display = "block"){
+                    if(window.innerWidth <= 600){
                         
                         playvideo('videos/orogunfestival.mp4');  
-                    }
-                    
-                    else{
-                        playvideo('videos/orogunfestival.mp4');
                         videoplayer.style.display = 'block';
                         videoplayer.requestFullscreen();
+                        videoplayer.webkitRequestFullscreen();
+                    }
+
+                    else{
+                        playvideo('videos/orogunfestival.mp4');
                     }
                 })
             })
+
+            video2.forEach(v2 =>{
+                    v2.addEventListener("click", ()=>{
+
+                    if(window.innerWidth <= 600){
+                        
+                        playvideo('videos/Last night was 🔥! Back to School hit different and if it had a GPA, it’d be straight A’s in fun.mp4');  
+                        videoplayer.style.display = 'block';
+                        videoplayer.requestFullscreen();
+                        videoplayer.webkitRequestFullscreen();
+                    }
+
+                    else{
+                        playvideo('videos/Last night was 🔥! Back to School hit different and if it had a GPA, it’d be straight A’s in fun.mp4');
+                    }
+                })
+            })
+
+            video3.forEach(v3 =>{
+                    v3.addEventListener("click", ()=>{
+
+                    if(window.innerWidth <= 600){
+                        
+                        playvideo('videos/One night. One room. One unforgettable energy. De Hallet Club opened its doors and set the tone .mp4');  
+                        videoplayer.style.display = 'block';
+                        videoplayer.requestFullscreen();
+                        videoplayer.webkitRequestFullscreen();
+                    }
+
+                    else{
+                        playvideo('videos/One night. One room. One unforgettable energy. De Hallet Club opened its doors and set the tone .mp4');
+                    }
+                })
+            })
+
+
+            
 
 
 
