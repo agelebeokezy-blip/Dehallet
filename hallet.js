@@ -44,5 +44,14 @@ document.querySelectorAll('nav a').forEach(link => {
   }
 });
 
+// video player script
+
+            const videoplayer = document.querySelector("#video-player")
+
+            function playvideo(file){
+
+                videoplayer.src = file;
+            }
+
 
 

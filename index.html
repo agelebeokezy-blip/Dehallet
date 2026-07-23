@@ -184,23 +184,17 @@
 
         <div  class="party-xp scroll">
 
-         <video id="video-player" controls autoplay class="scroll">
-                <source src=" " type="video/mp4">
-        </video>
-
-        <script>
-            const videoplayer = document.querySelector("#video-player")
-
-            function playvideo(file){
-
-                videoplayer.src = file;
-            }
-        </script>
+            <div class="video-player">
+                <video id="video-player" controls autoplay class="scroll">
+                    <source src=" " type="video/mp4">
+                </video>
+                <i class="fa-solid fa-x"></i>
+            </div>
 
         <div class="video-pic-grid" >
-            <div class="img scroll" onclick="playvideo('videos/orogunfestival.mp4'); videoplayer.style.display = 'block'">
+            <div class="img scroll" onclick="playvideo('videos/orogunfestival.mp4'); videoplayer.style.display = 'block'; videoplayer.requestFullscreen();">
                 <img src="Images-logos/lux-club.jpg" alt="" width="100%" height="100%" class="img1"> 
-                    <img src="Images-logos/play_7710514.png" alt="" class="img2" onclick="playvideo('videos/orogunfestival.mp4'); videoplayer.style.display = 'block'">
+                    <img src="Images-logos/play_7710514.png" alt="" class="img2" onclick="playvideo('videos/orogunfestival.mp4'); videoplayer.style.display = 'block'; videoplayer.requestFullscreen();">
                 </img>
                 <h3>Orogun festival Geh Geh live at De hallet</h3>
             </div>
