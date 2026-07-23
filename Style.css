@@ -453,6 +453,7 @@ body {
     width: 22.4vw;
     border-radius: 20px;
     background: #121212;
+    display: block;
 }
 
 video::-webkit-media-controls-fullscreen-button {

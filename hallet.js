@@ -47,6 +47,28 @@ document.querySelectorAll('nav a').forEach(link => {
 // video player script
 
             const videoplayer = document.querySelector("#video-player")
+            const video1 = document.querySelectorAll(".v1")
+            const video2 = document.querySelectorAll(".v2")
+            const video3 = document.querySelectorAll(".v3")
+
+            
+                video1.forEach(v1 =>{
+                    v1.addEventListener("click", ()=>{
+
+                    if(videoplayer.style.display = "block"){
+                        
+                        playvideo('videos/orogunfestival.mp4');  
+                    }
+                    
+                    else{
+                        playvideo('videos/orogunfestival.mp4');
+                        videoplayer.style.display = 'block';
+                        videoplayer.requestFullscreen();
+                    }
+                })
+            })
+
+
 
             function playvideo(file){
 
