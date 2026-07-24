@@ -14,7 +14,7 @@
 }
 
 body {
-    background:black ;
+    background: rgba(19, 18, 18, 0.99);
     color: white;
 }
 
@@ -231,7 +231,6 @@ header{
     text-align: center;
     background: none;
     font-size: larger;
-    font-family: "Bricolage Grotesque", sans-serif;
     width: 50vw;
     justify-self: center;
 }
@@ -250,7 +249,6 @@ header{
     display: grid;
     grid-template-columns:repeat(2, 50vw);
     margin-bottom: 10em;
-    font-family: "Bricolage Grotesque", sans-serif;
     text-align: left;
     font-weight: lighter;
 }
@@ -349,7 +347,6 @@ h1{
     font-weight: lighter;
     margin-bottom: 5%;
     margin-top: 3%;
-    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 p{
@@ -367,7 +364,6 @@ p{
     background: rgba(29, 28, 28, 0.99);
     color: white;
     padding-bottom: 1em;
-    font-family: "Bricolage Grotesque", sans-serif;
     border-top: 1px solid rgb(141, 122, 96);
     padding-top: 3em;
 }
