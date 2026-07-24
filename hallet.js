@@ -61,6 +61,7 @@ document.querySelectorAll('nav a').forEach(link => {
                         videoplayer.style.display = 'block';
                         videoplayer.requestFullscreen();
                         videoplayer.webkitRequestFullscreen();
+                        history.pushState({ playerOpen: true }, "");
                     }
 
                     else{
@@ -78,6 +79,7 @@ document.querySelectorAll('nav a').forEach(link => {
                         videoplayer.style.display = 'block';
                         videoplayer.requestFullscreen();
                         videoplayer.webkitRequestFullscreen();
+                        history.pushState({ playerOpen: true }, "");
                     }
 
                     else{
@@ -95,6 +97,7 @@ document.querySelectorAll('nav a').forEach(link => {
                         videoplayer.style.display = 'block';
                         videoplayer.requestFullscreen();
                         videoplayer.webkitRequestFullscreen();
+                        history.pushState({ playerOpen: true }, "");
                     }
 
                     else{
@@ -103,15 +106,19 @@ document.querySelectorAll('nav a').forEach(link => {
                 })
             })
 
-
-            
-
-
-
             function playvideo(file){
 
                 videoplayer.src = file;
             }
+
+            // display none when i go back
+
+
+// Handle browser/device back button
+window.addEventListener("popstate", () => {
+    videoplayer.style.display = "none";
+});
+
 
 
 
