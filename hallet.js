@@ -44,6 +44,31 @@ document.querySelectorAll('nav a').forEach(link => {
   }
 });
 
+
+// navbar scroll
+
+const header = document.querySelectorAll('.navbar');
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY && currentScrollY > 100) {
+    // Scrolling DOWN
+    header.forEach((head) => {
+    head.classList.add('show');
+    })
+  } else if (currentScrollY === 0) {
+    // Scrolling UP
+     header.forEach((head) => {
+    head.classList.remove('show');
+    })
+  }
+
+  lastScrollY = currentScrollY;
+});
+
 // video player script
 
             const videoplayer = document.querySelector("#video-player")
@@ -61,7 +86,6 @@ document.querySelectorAll('nav a').forEach(link => {
                         videoplayer.style.display = 'block';
                         videoplayer.requestFullscreen();
                         videoplayer.webkitRequestFullscreen();
-                        history.pushState({ playerOpen: true }, "");
                     }
 
                     else{
@@ -79,7 +103,6 @@ document.querySelectorAll('nav a').forEach(link => {
                         videoplayer.style.display = 'block';
                         videoplayer.requestFullscreen();
                         videoplayer.webkitRequestFullscreen();
-                        history.pushState({ playerOpen: true }, "");
                     }
 
                     else{
@@ -97,7 +120,6 @@ document.querySelectorAll('nav a').forEach(link => {
                         videoplayer.style.display = 'block';
                         videoplayer.requestFullscreen();
                         videoplayer.webkitRequestFullscreen();
-                        history.pushState({ playerOpen: true }, "");
                     }
 
                     else{
@@ -110,15 +132,6 @@ document.querySelectorAll('nav a').forEach(link => {
 
                 videoplayer.src = file;
             }
-
-            // display none when i go back
-
-
-// Handle browser/device back button
-window.addEventListener("popstate", () => {
-    videoplayer.style.display = "none";
-});
-
 
 
 
