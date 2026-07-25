@@ -123,31 +123,47 @@ header{
 .slide-frame{
     height: 750px;
     width: 100vw;
-    transition-duration: 0s;
-    background-size: 100% 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide-frame .img-container{
+    flex-shrink: 0;
+    width: 100vw;
+    transition-duration: 0.25s;
     background-repeat: no-repeat;
-    animation: slider 20s infinite;
-    justify-self: center;
+    animation: slider 30s infinite;
+    animation-timing-function: ease-in-out;
+    transition: 0.25s;
+}
+
+.slider-overlay{
+    width: 100vw;
+    height: 750px;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    z-index: 1;
 }
 
 @keyframes slider{
     0%{
-        background-image: url(Images-logos/de\ hallet\ main.jpg);
+        transform: translateX(0vw);
     }
-    20%{
-        background-image: url(Images-logos/IMG_1137.jpg);
+     20%{
+        transform: translateX(-100vw);
     }
-    40%{
-        background-image: url(Images-logos/IMG_1163.jpg);
+     40%{
+        transform: translateX(-200vw);
     }
-    60%{
-        background-image: url(Images-logos/IMG_1256.jpg);
+     60%{
+        transform: translateX(-300vw);
     }
-    80%{
-        background-image: url(Images-logos/IMG_1131.jpg);
+     80%{
+        transform: translateX(-400vw);
     }
-    100%{
-        background-image: url(Images-logos/IMG_1205.jpg);
+     100%{
+        transform: translateX(-500vw);
     }
 }
 
