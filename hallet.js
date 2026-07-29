@@ -133,5 +133,33 @@ window.addEventListener('scroll', () => {
                 videoplayer.src = file;
             }
 
+            
+
+// contact us form 
 
 
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const firstname = document.getElementById("firstname").value;
+    const email = document.getElementById("email").value;
+    const lastname = document.getElementById("lastname").value;
+    const message = document.getElementById("comment").value;
+
+    const text =
+`New Hallet Enquiry
+
+First Name: ${firstname}
+Last Name: ${lastname}
+Email: ${email}
+
+
+Comment:
+${message}`;
+
+    const whatsappNumber = "2347050372746";
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+});

@@ -55,21 +55,21 @@
 
       <div class="reservation-box">
 
-         <form action="">
+         <form action="" id="contactForm" method="post" enctype="multipart/form-data">
 
             <h1 class="headd">Contact us</h1> 
 
             <div class="input-box">
-                <input type="Text" name="Firstname" placeholder="First Name" required>
+                <input type="Text" name="Firstname" placeholder="First Name" id="firstname" required>
             </div>
             <div class="input-box">
-                <input type="text" name="Lastname" placeholder="Last Name" required>
+                <input type="text" name="Lastname" placeholder="Last Name" id="lastname" required>
             </div>
             <div class="input-box">
-                <input type="email" name="Email" placeholder="Email Address" required>
+                <input type="email" name="Email" placeholder="Email Address" id="email" required>
             </div>
             <div>
-                <textarea name="Comment" id="" placeholder="Additional information (Optional)" class="input-box" rows="6" cols="4"></textarea>
+                <textarea name="Comment" id="comment" placeholder="Additional information (Optional)" class="input-box" rows="6" cols="4"></textarea>
             </div>
            <div class="concent">
                 <input type="checkbox" required>
